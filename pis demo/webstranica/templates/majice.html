@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block title %}Majice{% endblock %}{% block
+    content %} 
+<form method="POST">
+    <br>
+    <h3>Majice</h3>
+    <br>
+        <div class="form-group">
+            <label for="markamajice">Marka Majice</label>
+            <input
+              type="markamajice"
+              class="form-control"
+              id="markamajice"
+              name="markamajice"
+              placeholder="Unesi marku majice"
+            />
+          </div>
+          <div class="form-group">
+            <label for="vrstamajice">Vrsta Majice</label>
+            <input
+              type="vrstamajice"
+              class="form-control"
+              id="vrstamajice"
+              name="vrstamajice"
+              placeholder="Unesi vrstu majice"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bojamajice">Boja Majice</label>
+            <input
+              type="bojamajice"
+              class="form-control"
+              id="bojamajice"
+              name="bojamajice"
+              placeholder="Unesi boju majice"
+            />
+          </div>
+          <div class="form-group">
+            <label for="materijalmajice">Materijal Majica</label>
+            <input
+              type="materijalmajice"
+              class="form-control"
+              id="materijalmajice"
+              name="materijalmajice"
+              placeholder="Unesi materijal majice"
+            />
+          </div>
+
+          <br />
+  <button type="submit" class="btn btn-primary">Pohrani</button>
+</form>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block title %}Patike{% endblock %}{% block
+    content %} 
+<form method="POST">
+    <br>
+    <h3>TENISICE</h3>
+    <br>
+        <div class="form-group">
+            <label for="markatenisica">Marka Tenisica</label>
+            <input
+              type="markatenisica"
+              class="form-control"
+              id="markatenisica"
+              name="markatenisica"
+              placeholder="Unesi marku tenisica"
+            />
+          </div>
+          <div class="form-group">
+            <label for="imetenisica">Ime Tenisica</label>
+            <input
+              type="imetenisica"
+              class="form-control"
+              id="imetenisica"
+              name="imetenisica"
+              placeholder="Unesi ime tenisica"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bojatenisica">Boja Tenisica</label>
+            <input
+              type="bojatenisica"
+              class="form-control"
+              id="bojatenisica"
+              name="bojatenisica"
+              placeholder="Unesi boju tenisica"
+            />
+          </div>
+          <div class="form-group">
+            <label for="materijaltenisica">Materijal Tenisica</label>
+            <input
+              type="materijaltenisica"
+              class="form-control"
+              id="materijaltenisica"
+              name="materijaltenisica"
+              placeholder="Unesi materijal tenisica"
+            />
+          </div>
+
+          <br />
+  <button type="submit" class="btn btn-primary">Pohrani</button>
+</form>
+{% endblock %}

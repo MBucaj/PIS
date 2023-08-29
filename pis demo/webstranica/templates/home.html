@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Display Tenisice data -->
+<h2>Tenisice</h2>
+<ul>
+  {% for entry in tenisice_data %}
+    <li>
+      {{ entry.marka }} - {{ entry.ime }} - {{ entry.boja }} - {{ entry.materijal }}
+      <form method="POST" action="{{ url_for('views.delete_tenisica', id_tenisica=entry.id_tenisica) }}">
+        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+      </form>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- Display Majice data -->
+<h2>Majice</h2>
+<ul>
+  {% for entry in majice_data %}
+    <li>
+      {{ entry.marka }} - {{ entry.ime }} - {{ entry.boja }} - {{ entry.materijal }}
+      <form method="POST" action="{{ url_for('views.delete_majica', id_majica=entry.id_majica) }}">
+        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+      </form>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}
